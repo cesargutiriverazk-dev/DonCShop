@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>donCshop</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+
+    background:#0f0f0f;
+
+    color:white;
+
+    font-family: Arial, sans-serif;
+
+    margin:0;
+
+}
+
+/* Navbar */
+
+nav{
+
+    background:black;
+
+    padding:15px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.logo{
+
+    color:gold;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+}
+
+/* Contenedor productos */
+
+.contenedor{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:25px;
+
+    padding:40px;
+
+}
+
+.card{
+
+    background:#1c1c1c;
+
+    width:250px;
+
+    border-radius:10px;
+
+    padding:15px;
+
+    text-align:center;
+
+    box-shadow:0 0 15px rgba(255,215,0,0.2);
+
+}
+
+.card img{
+
+    width:100%;
+
+    border-radius:8px;
+
+}
+
+.precio{
+
+    color:gold;
+
+    font-size:18px;
+
+}
+
+button{
+
+    background:gold;
+
+    border:none;
+
+    padding:10px;
+
+    width:100%;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+}
+
+button:hover{
+
+    background:orange;
+
+}
+
+/* Footer */
+
+footer{
+
+    background:black;
+
+    text-align:center;
+
+    padding:25px;
+
+    margin-top:40px;
+
+}
+
+@media(max-width:600px){
+
+    .contenedor{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">donCshop</div>
+
+<div>🛒 <span id="cantidad">0</span></div>
+
+</nav>
+
+<h1 style="text-align:center;color:gold;margin-top:25px;">
+
+Bienvenido a donCshop
+
+</h1>
+
+<div class="contenedor">
+
+<div class="card">
+
+<img src="https://via.placeholder.com/250x150">
+
+<h3>Cepillo Quitapelos</h3>
+
+<p class="precio">$39.900 COP</p>
+
+<button onclick="agregar(39900)">Agregar</button>
+
+</div>
+
+<div class="card">
+
+<img src="https://via.placeholder.com/250x150">
+
+<h3>Collar Mascota</h3>
+
+<p class="precio">$24.900 COP</p>
+
+<button onclick="agregar(24900)">Agregar</button>
+
+</div>
+
+<div class="card">
+
+<img src="https://via.placeholder.com/250x150">
+
+<h3>Juguete Mascota</h3>
+
+<p class="precio">$29.900 COP</p>
+
+<button onclick="agregar(29900)">Agregar</button>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>donCshop © 2026</p>
+
+<p>Tienda en desarrollo 🚀</p>
+
+</footer>
+
+<script>
+
+let cantidad = 0;
+
+function agregar(){
+
+    cantidad++;
+
+    document.getElementById("cantidad").innerText = cantidad;
+
+    alert("Producto agregado 🛒");
+
+}
+
+</script>
+
+</body>
+
+</html>
+    
+  </body>
+  
+</html>
